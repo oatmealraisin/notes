@@ -38,9 +38,11 @@ rounds of gradient descent.
 - Based on the idea of loss optimization as gravity
 - Creates a residual effect of consistent direction
   - This allows us much larger learning rates
-- v(t) = \alpha * v(t - 1) - \epsilon * (dE/dw)(t)
+- v(t) = \alpha * v(t - 1) - \epsilon * (dE/dw)
 - \delta w(t) = v(t)
 - Start with a small momentum
+
+v(infinity) = 1/(1-\alpha) * (-\epsilon * (dE/dw))
 
 ### Nesterov Method
 
